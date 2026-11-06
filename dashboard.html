@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e1727">
+  <title>Organisatordashboard – IT-demo</title>
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/dashboard.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <div class="eyebrow">IT-LESDEMO · PRIVÉ DASHBOARD</div>
+    <section class="panel">
+      <h1>Ontvangen locatie</h1>
+      <p>Voer de <strong>ADMIN_KEY</strong> in die je bij de hosting hebt ingesteld. Deze sleutel mag niet in de link voor deelnemers staan.</p>
+      <label for="secret">Beheerderssleutel</label>
+      <div class="formrow"><input id="secret" type="password" autocomplete="off" placeholder="Beheerderssleutel"><button id="connect">Dashboard openen</button></div>
+      <p id="connection" class="muted" role="status" aria-live="polite">Nog niet verbonden.</p>
+      <section id="result" class="result" hidden>
+        <h2>Laatste gedeelde locatie</h2>
+        <p id="empty" class="muted">Er is nog geen locatie gedeeld.</p>
+        <div id="position" hidden>
+          <dl>
+            <div><dt>Breedtegraad</dt><dd id="lat">—</dd></div>
+            <div><dt>Lengtegraad</dt><dd id="lon">—</dd></div>
+            <div><dt>Nauwkeurigheid</dt><dd id="accuracy">—</dd></div>
+            <div><dt>Ontvangen</dt><dd id="time">—</dd></div>
+          </dl>
+          <a id="map" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
+        </div>
+        <p class="muted">Vernieuwt automatisch iedere 3 seconden. Toont uitsluitend de laatst gedeelde locatie, maximaal 15 minuten.</p>
+        <button id="clear" class="secondary">Locatie verwijderen</button>
+      </section>
+    </section>
+    <footer>Deelnemers zien een toestemmingsscherm en kiezen zelf of zij delen.</footer>
+  </main>
+</body>
+</html>

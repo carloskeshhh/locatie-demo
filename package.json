@@ -1,0 +1,8 @@
+{
+  "name": "locatie-link-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Opt-in locatie delen als IT-lesdemo",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}
