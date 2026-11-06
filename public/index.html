@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e1727">
+  <title>Locatie delen – IT-demo</title>
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/share.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <div class="eyebrow">IT-LESDEMO · TOESTEMMINGSGESTUURD</div>
+    <section class="panel">
+      <div class="glyph">⌖</div>
+      <h1>Deel je locatie voor de demo</h1>
+      <p>Als je op de knop klikt, vraagt je browser toestemming om je huidige locatie op te halen. Bij toestemming wordt je <strong>eenmalige GPS-locatie inclusief nauwkeurigheid</strong> doorgestuurd naar het dashboard van de organisator.</p>
+      <p>Er is geen voortdurende tracking en geen locatieverzameling zolang je niet op de knop drukt. De locatie verdwijnt na 15 minuten van de demo-server of eerder wanneer de organisator wist. Deel uitsluitend als je hiermee akkoord gaat.</p>
+      <button id="share">Mijn locatie eenmalig delen</button>
+      <p class="muted">Je kunt ook weigeren: dan wordt geen locatie doorgestuurd.</p>
+      <p id="status" role="status" aria-live="polite"></p>
+    </section>
+    <footer>Educatieve demonstratie · Je bepaalt zelf of je je locatie deelt.</footer>
+  </main>
+</body>
+</html>
